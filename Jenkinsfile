@@ -34,5 +34,7 @@ node {
 
     stage('Static Code Analysis') {
         echo "Static analysis placeholder (SonarQube/Checkstyle can go here)"
+        // Later you can integrate SonarQube or Checkstyle:
+        // bat "mvn sonar:sonar"
     }
 }
