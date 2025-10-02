@@ -41,9 +41,12 @@ node {
       }
    }
 	
-   stage('Static Code Analysis'){
-       build job: 'static-code-analysis'
-   }
+   stage('Static Code Analysis') {
+    steps {
+        bat 'mvn clean verify'
+    }
+}
+
 	
 
 }
